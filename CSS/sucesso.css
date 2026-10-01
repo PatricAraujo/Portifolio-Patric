@@ -1,0 +1,29 @@
+body {
+
+    justify-content: center;
+    max-width: 900px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 0 15px 0;
+    font-size: 28px;
+    text-align: center;
+}
+h1{
+    color: #166534
+}
+a {
+    background-color: #f97316;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+a::after {
+    content: " ↗";
+    font-size: 14px;
+}

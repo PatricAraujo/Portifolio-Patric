@@ -1,0 +1,274 @@
+/* Inicio estilo geral da pagina */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #f8fafc;
+    color: #1f2937;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 30px 20px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+button,
+a {
+    color: #2563eb;
+    background-color: #f97316;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 26px;
+    color: #0f172a;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+    margin-top: 40px;
+}
+h2::before {
+    content: "■ ";
+    color: #2563eb;
+    margin-right: 8px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #1e3a8a;
+    margin-top: 40px;
+}
+
+img {
+    max-width: 250px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+/* Fim do estilo geral da pagina */
+
+
+/* Inicio estilo menu e cabeçalho */
+/* Cabeçalho */
+header h1 {
+    margin: 0 0 15px 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* Menu principal */
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /*espaço entre itens do menu */
+    gap: 5px;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    display: flex;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+/* Conteudo principal e sections */
+main {
+    /* impedir que o texto fique muito grande em ecras maiores */
+    max-width: 900px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+section ul{
+    list-style: none;
+}
+h4 a {
+    font-size: 18px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+h4 a:hover {
+    text-decoration: underline;
+}
+
+h4 a::after {
+    content: " ↗";
+    font-size: 14px;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #1e293b;
+    text-align: justify;
+}
+
+a[href="#inicio"] {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 4px 10px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+a[href="#inicio"]:hover {
+    background-color: #cbd5e1;
+}
+
+/* Fim do conteudo principal e sections */
+
+
+/* Avatar e as imagens */
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#avatar {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #64748b;
+}
+
+/* Fim de avatar e as imagens */
+
+/* SINCERAMENTE EU PESQUISEI SOBRE A FORMATACAO DAS TABELAS, N SABIA MUITO SOBRE... */
+/* Tabela de horario */
+table {
+    width: 100%;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #cbd5e1;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+    /* Efeito zebrado na tabela */
+}
+
+/* Fim da tabela de horario */
+
+/* Formulario de contacto */
+form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1e293b;
+}
+
+input {
+    width: 50%;
+    font-size: 15px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+    background-color: #e2e8f0;
+    color: #1e293b;
+}
+
+/* Fim do formulario de contacto */
+
+/* Rodape */
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+footer h3,
+footer p {
+    color: #fff;
+    text-align: center;
+}
