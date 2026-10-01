@@ -5,6 +5,7 @@
     font-size: 16px;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -53,6 +54,7 @@ h2 {
     padding-bottom: 8px;
     margin-top: 40px;
 }
+
 h2::before {
     content: "■ ";
     color: #2563eb;
@@ -83,6 +85,8 @@ header h1 {
 }
 
 /* Menu principal */
+nav {}
+
 nav ul {
     padding: 0;
     margin: 0;
@@ -100,6 +104,7 @@ nav a {
     text-decoration: none;
     padding: 8px 14px;
     border-radius: 6px;
+    width: 100%;
 }
 
 nav a:hover {
@@ -118,9 +123,11 @@ main {
 section {
     margin-bottom: 40px;
 }
-section ul{
+
+section ul {
     list-style: none;
 }
+
 h4 a {
     font-size: 18px;
     color: #2563eb;
@@ -187,6 +194,15 @@ table {
     border-radius: 8px;
     border-collapse: collapse;
     overflow: hidden;
+    white-space: nowrap;
+}
+
+#meusHorarios {
+    max-width: 100%;
+    overflow-x: auto;
+    /* Faz o scroll aparecer na section se a tabela não couber */
+    -webkit-overflow-scrolling: touch;
+
 }
 
 th,
@@ -271,4 +287,20 @@ footer h3,
 footer p {
     color: #fff;
     text-align: center;
+}
+/* Essa parte eu tbm tive q pesquisar pq minha pag quebrava toda em resolução 375x667 */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        width: 100%;
+        max-width: 220px;
+        text-align: center;
+        white-space: nowrap;
+    }
 }
